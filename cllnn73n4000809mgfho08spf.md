@@ -22,4 +22,4 @@ Discover the incredible technology behind Shazam's song identification process. 
 
 ### [**What is Microfrontend**](https://micro-frontends.org/) **🚀**
 
-Explore the concept of micro frontends in web development. This article provides insights into the micro frontend architectural style, where frontend applications are decomposed into smaller, independently deployable units, enabling efficie. [Read more](https://micro-frontends.org/)
+Explore the concept of micro frontends in web development. This article provides insights into the micro frontend architectural style, where frontend applications are decomposed into smaller, independently deployable units. [Read more](https://micro-frontends.org/)
