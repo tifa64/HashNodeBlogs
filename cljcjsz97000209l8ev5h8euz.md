@@ -3,7 +3,6 @@ title: "Cache me if you can issue #3"
 datePublished: Mon Jun 26 2023 07:39:29 GMT+0000 (Coordinated Universal Time)
 cuid: cljcjsz97000209l8ev5h8euz
 slug: cache-me-if-you-can-issue-3
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1687765097790/ee7c50fb-6bdb-4f49-9363-2fdc7508a72f.jpeg
 tags: ai, security, explainable-ai
 
 ---
