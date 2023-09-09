@@ -138,7 +138,7 @@ Hope you found this useful 😊
 
 [https://en.wikipedia.org/wiki/Matei\_Zaharia](https://en.wikipedia.org/wiki/Matei_Zaharia)
 
-‫
+‫[https://www.britannica.com/technology/hard-disk](https://www.britannica.com/technology/hard-disk)
 
 ‫
 
