@@ -12,7 +12,157 @@ Inspired by [this Leetcode Post](https://leetcode.com/problems/permutations/solu
 I've decided to provide a unified template and discussion for backtracking problems:
 
 
-Here’s a generalized template for backtracking problems that you can use for solving similar problems like subsets, permutations, combination sum, and palindrome partitioning. I'll also provide some observations on each problem based on the given examples.
+
+Here is a **Backtracking** template in **pseudo code**:
+
+### Pseudo Code Template for Backtracking:
+
+```pseudo
+Function Backtrack(State, solution):
+    // Base case: check if the solution is complete or valid
+    if IsComplete(solution):
+        // Process the solution if it's valid
+        ProcessSolution(solution)
+        return
+    
+    // Loop through possible options at this state
+    for each option in GetOptions(State):
+        // Make a choice and update the state
+        MakeChoice(State, option)
+        
+        // Recursively explore further with the updated state
+        Backtrack(UpdatedState, UpdatedSolution)
+        
+        // Undo the choice (Backtrack) to explore other options
+        UndoChoice(State, option)
+
+Function Main():
+    // Define the initial state and solution
+    InitialState = DefineInitialState()
+    InitialSolution = InitializeSolution()
+    
+    // Start the backtracking process
+    Backtrack(InitialState, InitialSolution)
+```
+
+### Explanation:
+
+1. **Base Case**:  
+   The function checks whether the current partial solution is complete or valid. If it is, the solution is processed (e.g., printed, stored, or counted), and the recursion stops for this branch.
+
+2. **Explore Options**:  
+   The function loops through each possible option or decision at the current state. For each option, it updates the state, makes a choice, and proceeds to the next step recursively.
+
+3. **Make a Choice**:  
+   This step modifies the current state based on the option chosen, like adding an element to a solution or choosing a path.
+
+4. **Undo the Choice (Backtrack)**:  
+   After exploring one possibility (or even after exploring further down the recursion tree), the algorithm backtracks by undoing the previous choice, reverting the state back to what it was before. This ensures that other options can be explored.
+
+5. **Recursive Call**:  
+   The function makes a recursive call to explore the next level of decisions using the updated state and solution.
+
+6. **Main Function**:  
+   The `Main()` function initializes the starting state and solution, then triggers the backtracking process by calling `Backtrack()`.
+
+---
+
+### Example Problem: N-Queens Problem
+
+This is an example of using the backtracking template to solve the **N-Queens problem**, where the goal is to place N queens on an N×N chessboard such that no two queens threaten each other.
+
+```pseudo
+Function IsSafe(board, row, col):
+    // Check if placing a queen at (row, col) is safe
+    for each i from 0 to row-1:
+        if board[i][col] == 1:  // Check the column
+            return False
+        if board[i][col - (row - i)] == 1:  // Check the left diagonal
+            return False
+        if board[i][col + (row - i)] == 1:  // Check the right diagonal
+            return False
+    return True
+
+Function Backtrack(board, row):
+    // Base case: if all queens are placed
+    if row == N:
+        ProcessSolution(board)
+        return
+    
+    // Try placing a queen in each column for this row
+    for col from 0 to N-1:
+        if IsSafe(board, row, col):
+            board[row][col] = 1  // Place a queen
+            Backtrack(board, row + 1)  // Recursively place queens in the next row
+            board[row][col] = 0  // Undo the choice (backtrack)
+
+Function ProcessSolution(board):
+    // Output the current solution (board configuration)
+    Print(board)
+
+Function Main():
+    N = 4  // Size of the board (4x4 in this example)
+    board = InitializeBoard(N)
+    Backtrack(board, 0)
+```
+
+### Key Functions in the Example:
+
+- **IsSafe(board, row, col)**: This checks if placing a queen at position `(row, col)` is safe by ensuring no other queens are in the same column or diagonal.
+  
+- **Backtrack(board, row)**: The main backtracking function that places queens row by row. It attempts to place a queen in each column of the current row, then recursively tries to place queens in the following rows. If placing a queen leads to a valid solution, it processes the board; otherwise, it backtracks by removing the queen and trying the next column.
+
+- **ProcessSolution(board)**: This function is called when a valid arrangement of queens is found, and it outputs the solution.
+
+---
+
+### Example Problem: Subset Sum Problem
+
+Here's another example that solves the **Subset Sum** problem, where we want to find a subset of numbers that adds up to a given target.
+
+```pseudo
+Function Backtrack(nums, target, index, currentSubset):
+    // Base case: if target becomes 0, we found a solution
+    if target == 0:
+        ProcessSolution(currentSubset)
+        return
+    
+    // Base case: if index exceeds the array size or target becomes negative
+    if index >= length(nums) or target < 0:
+        return
+    
+    // Include the current number and recurse
+    currentSubset.append(nums[index])
+    Backtrack(nums, target - nums[index], index + 1, currentSubset)
+    
+    // Exclude the current number and recurse
+    currentSubset.removeLast()
+    Backtrack(nums, target, index + 1, currentSubset)
+
+Function ProcessSolution(currentSubset):
+    // Output the current solution (subset)
+    Print(currentSubset)
+
+Function Main():
+    nums = [2, 3, 7, 8, 10]
+    target = 11
+    Backtrack(nums, target, 0, [])
+```
+
+### Key Functions in this Example:
+
+- **Backtrack(nums, target, index, currentSubset)**: This function tries to find a subset of numbers from `nums` that adds up to `target`. It does this by including the current number, recursing, and then backtracking by excluding it.
+  
+- **ProcessSolution(currentSubset)**: When a valid subset is found, this function processes it (e.g., printing the subset).
+
+---
+
+### Key Points:
+- **Recursive exploration**: In backtracking, each choice leads to a recursive call exploring the next step.
+- **Undo choices**: After exploring one path, backtracking undoes the current decision (by removing the item or reversing the choice) to explore a different path.
+- **Base case**: When the solution is complete or no more choices can be made, the algorithm terminates or processes the solution.
+
+Backtracking is commonly used for problems where you need to explore all possible combinations or configurations and choose the best one (or all valid solutions), such as in puzzles, combinatorial problems, or constraint satisfaction problems.
 
 ### Generalized Backtracking Template:
 ```java
