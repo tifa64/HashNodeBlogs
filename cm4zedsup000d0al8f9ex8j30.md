@@ -75,5 +75,6 @@ slug: kyf-ymkn-thsyn-allgha-alinglyzya
 بنصح بمشاهدة القناة
 
 https://youtube.com/@zamericanenglish?si=gEYGiVFy-AsocakI
+https://www.youtube.com/playlist?list=PL5isa5XjlZ5qKX61YuOdq-aoFy3ZHF_hb
 
 بالتوفيق ^\_^
