@@ -8,7 +8,7 @@ slug: kyf-ymkn-thsyn-allgha-alinglyzya
 
 ### كيف يمكن لمطوري البرمجيات تعلم اللغة الإنجليزية؟
 
-اللغة الإنجليزية أداة أساسية لمطوري البرمجيات، سواء للتواصل مع فرق العمل الدولية، أو لفهم الوثائق التقنية، أو للمشاركة في مجتمعات البرمجة عبر الإنترنت. إليك 8-10 خطوات لتحسين مهاراتك في اللغة الإنجليزية كمطور برمجيات:
+اللغة الإنجليزية أداة أساسية لمطوري البرمجيات، سواء للتواصل مع فرق العمل الدولية، أو لفهم الوثائق التقنية، أو للمشاركة في مجتمعات البرمجة عبر الإنترنت أقدم هنا بضع خطوات لتحسين مهاراتك في اللغة الإنجليزية كمطور برمجيات:
 
 #### 1\. **مشاهدة المحاضرات المسلسلات و الأفلام بالترجمة الإنجليزية**
 
@@ -74,7 +74,11 @@ slug: kyf-ymkn-thsyn-allgha-alinglyzya
 
 بنصح بمشاهدة القناة
 
-https://youtube.com/@zamericanenglish?si=gEYGiVFy-AsocakI
-https://www.youtube.com/playlist?list=PL5isa5XjlZ5qKX61YuOdq-aoFy3ZHF_hb
+1. https://youtube.com/@zamericanenglish?si=gEYGiVFy-AsocakI
+    
+2. https://www.youtube.com/playlist?list=PL5isa5XjlZ5qKX61YuOdq-aoFy3ZHF\_hb
+    
+3. و استغلال freecodecamp https://www.freecodecamp.org/learn/b1-english-for-developers/
+    
 
 بالتوفيق ^\_^
