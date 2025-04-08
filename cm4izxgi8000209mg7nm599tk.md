@@ -234,3 +234,5 @@ If you lack technical skills, don’t worry. Many solopreneurs start with minima
 8. [The Secret to Finding Profitable Software Ideas](https://www.youtube.com/watch?v=pIZ_MXutC0o)
     
 9. [Repo resources for indie makers](https://github.com/mezod/awesome-indie)
+    
+10. [Marc Lou’s ship fast roadmap](https://codefa.st/roadmap)
